@@ -22,7 +22,7 @@ body{
 
 .content{
     
-    background: url(/images/mike.png) no-repeat;
+    background: url(mike.png) no-repeat;
     background-size: cover;
     justify-content: center;
     align-items: center;
