@@ -688,7 +688,7 @@ form .btn-2{
 
 
     .nav__menu{
-        background: url('/./images/open1.png') no-repeat;
+        background: url('././images/open1.png') no-repeat;
         background-size: 40px;
         background-position: center;
         margin-right: 30px;
