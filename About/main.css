@@ -1,0 +1,98 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+
+:root{
+
+    --default-color: #7c6014;
+    --text-color: rgb(209, 203, 172);
+    --bg-color: rgb(0, 0, 0);
+
+}
+
+
+
+body{
+    background-image: cover;
+}
+
+.content{
+    
+    background: url(/images/mike.png) no-repeat;
+    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    padding: 100px 200px;
+}
+
+
+.content__flex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.content img{
+    position: block;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+}
+
+.content content__flex-left{
+    display: flex;
+    position: absolute;
+    justify-content: start;
+    align-items: center;
+}
+
+.content .content__flex-left h1{
+    position: fixed;
+    display: flex;
+    align-items: center;
+    top: 400px;
+    padding-left: 50px;
+    font-size: 3em;
+    font-weight: 700;
+    background: var(--default-color);
+    color: #000;
+    padding: 15px 35px;
+    font-weight: 600;
+    text-decoration: none;
+    border-radius: 2px;
+    transition: 0.3s ease;
+    cursor: pointer;
+}
+
+
+
+
+.content__flex-left h1:hover{
+    background-color: var(--text-color);
+    color: rgb(255, 4, 4);
+}
+
+
+
+.content__flex-left h1{
+   
+    animation-name: content__flex-left;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes content__flex-left {
+    0%   {background-color: rgba(27, 97, 248, 0.87);}
+    25%  {background-color: rgb(100, 100, 56);}
+    50%  {background-color: rgb(216, 202, 9);}
+    100% {background-color: rgb(30, 196, 8);}
+  }
+
